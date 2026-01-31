@@ -1,0 +1,2014 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Fauna Africa - Animaux Rares Africains</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a472a;
+            --secondary: #d4af37;
+            --accent: #8b4513;
+            --dark: #0d2818;
+            --light: #f8f5f0;
+            --text: #333333;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            color: var(--white);
+            padding: 1.2rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-icon {
+            font-size: 2.2rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--secondary);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        nav a:hover::after {
+            width: 70%;
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+            font-size: 1.4rem;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.1);
+            transition: var(--transition);
+        }
+
+        .cart-icon:hover {
+            background: rgba(212, 175, 55, 0.2);
+            transform: rotate(15deg);
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: var(--secondary);
+            color: var(--dark);
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(13, 40, 24, 0.85), rgba(26, 71, 42, 0.9));
+            color: var(--white);
+            padding: 10rem 2rem 6rem;
+            text-align: center;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://media.istockphoto.com/id/1184449355/fr/photo/salutation-rouge-de-panda-avec-la-patte-augment%C3%A9e.webp?a=1&b=1&s=612x612&w=0&k=20&c=jrgnzd3eF5RPolXYWa3thZudPDqVi0GYM3xgFjIUw_g=') center/cover;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 span {
+            color: var(--secondary);
+            display: block;
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--secondary), #e6c158);
+            color: var(--dark);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-5px);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 2rem;
+            background: var(--white);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(26, 71, 42, 0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Shop Section */
+        .shop {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #f8f5f0 0%, #e8e2d6 100%);
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: scale(1.05);
+        }
+
+        .animals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1300px;
+            margin: 0 auto 3rem;
+        }
+
+        .animal-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .animal-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .animal-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--secondary);
+            color: var(--dark);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            z-index: 2;
+        }
+
+        .animal-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .animal-card:hover .animal-img {
+            transform: scale(1.05);
+        }
+
+        .animal-info {
+            padding: 1.5rem;
+        }
+
+        .animal-name {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .animal-scientific {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .animal-price {
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        /* Articles Section */
+        .articles {
+            padding: 4rem 2rem;
+            background: var(--white);
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .article-card {
+            background: var(--light);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        /* Commandes Section */
+        .orders-section {
+            padding: 6rem 2rem 4rem;
+            background: var(--light);
+            min-height: 100vh;
+        }
+
+        .orders-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .order-card {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--secondary);
+            transition: var(--transition);
+        }
+
+        .order-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .order-status {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .status-paid {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        /* Cart Modal */
+        .cart-modal {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100%;
+            background: var(--white);
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+            transition: right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow-y: auto;
+        }
+
+        .cart-modal.active {
+            right: 0;
+        }
+
+        .cart-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+        }
+
+        .cart-overlay.active {
+            display: block;
+        }
+
+        /* Checkout */
+        .checkout {
+            padding: 6rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        .checkout.active {
+            display: block;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .payment-method {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 2px solid var(--secondary);
+        }
+
+        .wallet-address {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            word-break: break-all;
+            font-family: monospace;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Article Modal */
+        .article-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1002;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .article-modal.active {
+            display: flex;
+        }
+
+        .article-modal-content {
+            background: var(--white);
+            border-radius: 15px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .close-article {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* Video Modal */
+        .video-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1003;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .video-modal.active {
+            display: flex;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .video-modal-content {
+            width: 90%;
+            max-width: 900px;
+            background: #000;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .close-video {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 2rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .close-video:hover {
+            color: var(--secondary);
+            transform: scale(1.1);
+        }
+
+        .video-title {
+            padding: 1rem;
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            color: var(--white);
+            padding: 3rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav ul {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--dark);
+                flex-direction: column;
+                padding: 1rem;
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: var(--transition);
+                z-index: 999;
+                text-align: center;
+            }
+            
+            nav ul.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+            .hero {
+                padding: 7rem 1rem 4rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h1 span {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .cart-modal {
+                width: 100%;
+                right: -100%;
+            }
+            
+            .orders-container {
+                padding: 1rem;
+            }
+            
+            .filters {
+                gap: 0.5rem;
+            }
+            
+            .filter-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .video-modal-content {
+                width: 95%;
+            }
+            
+            .close-video {
+                top: -35px;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-paw logo-icon"></i>
+                Exotic Fauna Africa
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home" class="active">Accueil</a></li>
+                    <li><a href="#shop">Boutique</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#orders">Commandes</a></li>
+                    <li class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Exotic Fauna <span>Africa</span></h1>
+            <p>Votre partenaire de confiance pour l'acquisition d'animaux rares d'origine africaine. Élevés avec passion, certifiés CITES, livrés avec soin.</p>
+            <div class="cta-buttons">
+                <a href="#shop" class="btn btn-primary">
+                    <i class="fas fa-shopping-bag"></i> Explorer la Boutique
+                </a>
+                <button onclick="openVideoModal()" class="btn btn-secondary">
+                    <i class="fas fa-play-circle"></i> Voir la Vidéo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="section-title">
+            <h2>Pourquoi Nous Choisir</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Certifié CITES</h3>
+                <p>Certification internationale garantissant la légalité et la traçabilité de chaque animal.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Élevage Responsable</h3>
+                <p>Conditions optimales d'élevage sous supervision vétérinaire permanente.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Livraison Internationale</h3>
+                <p>Transport spécialisé avec suivi en temps réel et garantie d'arrivée en bonne santé.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop" id="shop">
+        <div class="section-title">
+            <h2>Notre Collection Exclusive</h2>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterAnimals('all')">Tous</button>
+            <button class="filter-btn" onclick="filterAnimals('felines')">Félins</button>
+            <button class="filter-btn" onclick="filterAnimals('primates')">Primates</button>
+            <button class="filter-btn" onclick="filterAnimals('reptiles')">Reptiles</button>
+            <button class="filter-btn" onclick="filterAnimals('birds')">Oiseaux</button>
+        </div>
+        
+        <div class="animals-grid" id="animalsGrid">
+            <!-- Les animaux seront chargés ici par JavaScript -->
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles" id="articles">
+        <div class="section-title">
+            <h2>Articles & Conseils</h2>
+        </div>
+        <div class="articles-grid" id="articlesGrid">
+            <!-- Les articles seront chargés ici par JavaScript -->
+        </div>
+    </section>
+
+    <!-- Commandes Section -->
+    <section class="orders-section" id="orders">
+        <div class="orders-container">
+            <div class="section-title">
+                <h2>Mes Commandes</h2>
+            </div>
+            <div id="ordersList">
+                <!-- Les commandes seront affichées ici -->
+                <p id="noOrdersMessage">Aucune commande pour le moment. Passez votre première commande !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <button class="close-video" onclick="closeVideoModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-title">
+                Exotic Fauna Africa - Notre Mission
+            </div>
+            <div class="video-container">
+                <!-- La vidéo Pinterest est intégrée ici -->
+                <iframe src="jolo.mp4" 
+                        frameborder="0" 
+                        allow="autoplay; encrypted-media" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-modal" id="cartModal">
+        <div style="padding: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                <h2>Votre Panier</h2>
+                <button onclick="toggleCart()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark);">×</button>
+            </div>
+            <div id="cartItems"></div>
+            <div id="cartTotal" style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid #eee;"></div>
+            <button class="btn btn-primary" onclick="goToCheckout()" style="width: 100%; margin-top: 1.5rem;">
+                <i class="fas fa-lock"></i> Procéder au Paiement
+            </button>
+        </div>
+    </div>
+
+    <!-- Checkout -->
+    <section class="checkout" id="checkout">
+        <div style="background: var(--white); border-radius: 15px; padding: 2rem; box-shadow: var(--shadow);">
+            <div class="section-title">
+                <h2>Finaliser Votre Commande</h2>
+            </div>
+            
+            <div id="checkoutSummary"></div>
+            
+            <div class="payment-method">
+                <h3><i class="fas fa-wallet"></i> Paiement par Cryptomonnaie</h3>
+                <p style="margin: 1rem 0;">Envoyez le montant exact à l'adresse ETH suivante :</p>
+                
+                <div class="wallet-address">
+                    <code id="ethAddress">0x530e7ac39c142a899fab6ef30c8ce6faeb1befef</code>
+                    <button onclick="copyETHAddress()" style="background: var(--secondary); color: var(--dark); border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                        <i class="fas fa-copy"></i> Copier
+                    </button>
+                </div>
+                
+                <p style="color: #e74c3c; margin-top: 1rem; font-size: 0.9rem;">
+                    <i class="fas fa-exclamation-triangle"></i> <strong>Paiement avant livraison :</strong> Votre commande sera préparée uniquement après confirmation du paiement.
+                </p>
+            </div>
+            
+            <form id="checkoutForm" style="margin-top: 2rem;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nom complet *</label>
+                        <input type="text" id="customerName" required style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;">
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email *</label>
+                        <input type="email" id="customerEmail" required style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;">
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Adresse de livraison *</label>
+                    <textarea id="customerAddress" required rows="3" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;"></textarea>
+                </div>
+                
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Téléphone</label>
+                    <input type="tel" id="customerPhone" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;">
+                </div>
+                
+                <button type="button" class="btn btn-primary" onclick="processPayment()" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                    <i class="fas fa-file-invoice"></i> Confirmer et Générer la Facture
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Article Modal -->
+    <div class="article-modal" id="articleModal">
+        <div class="article-modal-content">
+            <button class="close-article" onclick="closeArticleModal()">×</button>
+            <div id="articleModalContent">
+                <!-- Contenu de l'article détaillé -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">
+                    <i class="fas fa-paw"></i> EFA
+                </div>
+                <p>Spécialistes de la faune africaine rare depuis 2005. Certifié CITES et conforme aux normes internationales.</p>
+            </div>
+            
+            <div>
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> labelvidaola@gmail.com</p>
+                <!-- <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p> -->
+                <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+            </div>
+            
+            <div>
+                <h3>Liens rapides</h3>
+                <p><a href="#shop" style="color: var(--secondary); text-decoration: none;">Boutique</a></p>
+                <p><a href="#articles" style="color: var(--secondary); text-decoration: none;">Articles</a></p>
+                <p><a href="#orders" style="color: var(--secondary); text-decoration: none;">Mes Commandes</a></p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2025 Exotic Fauna Africa. Tous droits réservés. | Commerce réglementé - Certificats obligatoires</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; color: rgba(255,255,255,0.5);">
+                Ce site respecte la convention CITES et les réglementations internationales sur le commerce d'espèces protégées.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Votre adresse ETH
+        const ETH_ADDRESS = "0x530e7ac39c142a899fab6ef30c8ce6faeb1befef";
+        
+        // Base de données des animaux avec URLs d'images fonctionnelles
+        const animals = [
+            {
+                id: 1,
+                name: "Serval d'Afrique",
+                scientific: "Leptailurus serval",
+                price: 8500,
+                image: "https://images.unsplash.com/photo-1754498250374-4f057917f4b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U2VydmFsJTIwZCdBZnJpcXVlfGVufDB8fDB8fHww",
+                description: "Magnifique félin des savanes africaines, connu pour ses longues pattes et son pelage tacheté.",
+                category: "felines",
+                stock: 3,
+                certificate: "CITES Annex B",
+                age: "2 ans",
+                origin: "Afrique de l'Est"
+            },
+            {
+                id: 2,
+                name: "Caracal",
+                scientific: "Caracal caracal",
+                price: 16000,
+                image: "https://plus.unsplash.com/premium_photo-1664304388854-d8f6e2e2727e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2FyYWNhbHxlbnwwfHwwfHx8MA%3D%3D",
+                description: "Félin majestueux aux oreilles noires caractéristiques, excellent chasseur.",
+                category: "felines",
+                stock: 2,
+                certificate: "CITES Annex II",
+                age: "3 ans",
+                origin: "Afrique du Sud"
+            },
+            {
+                id: 3,
+                name: "Léopard d'Afrique",
+                scientific: "Panthera pardus",
+                price: 25000,
+                image: "https://plus.unsplash.com/premium_photo-1661906061070-876e73beed12?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TCVDMyVBOW9wYXJkJTIwZCdBZnJpcXVlfGVufDB8fDB8fHww",
+                description: "Un des plus beaux prédateurs africains, nécessitant un espace important.",
+                category: "felines",
+                stock: 1,
+                certificate: "CITES Annex I",
+                age: "4 ans",
+                origin: "Afrique centrale"
+            },
+            {
+                id: 4,
+                name: "Maki Catta",
+                scientific: "Lemur catta",
+                price: 4500,
+                image: "https://images.unsplash.com/photo-1646995608134-3f6c45c983c9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFraSUyMENhdHRhfGVufDB8fDB8fHww",
+                description: "Lémurien emblématique de Madagascar, sociable et intelligent.",
+                category: "primates",
+                stock: 4,
+                certificate: "CITES Annex I",
+                age: "1 an",
+                origin: "Madagascar"
+            },
+            {
+                id: 5,
+                name: "Guenon de Brazza",
+                scientific: "Cercopithecus neglectus",
+                price: 3800,
+                image: "https://media.istockphoto.com/id/824864252/fr/photo/cercopith%C3%A8que-de-brazza.webp?a=1&b=1&s=612x612&w=0&k=20&c=IXcnR_HLudGhFjPwIVNtjZ4O45CVoG3GjnmJzWctaGY=",
+                description: "Singe arboricole aux couleurs magnifiques, très apprécié des collectionneurs.",
+                category: "primates",
+                stock: 3,
+                certificate: "CITES Annex II",
+                age: "2 ans",
+                origin: "Congo"
+            },
+            {
+                id: 6,
+                name: "Python Royal",
+                scientific: "Python regius",
+                price: 400,
+                image: "https://plus.unsplash.com/premium_photo-1664303799202-af9165d754a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UHl0aG9uJTIwUm95YWx8ZW58MHx8MHx8fDA%3D",
+                description: "Serpent docile au magnifique motif, idéal pour les débutants.",
+                category: "reptiles",
+                stock: 8,
+                certificate: "CITES Annex II",
+                age: "6 mois",
+                origin: "Afrique de l'Ouest"
+            },
+            {
+                id: 7,
+                name: "Tortue Léopard",
+                scientific: "Stigmochelys pardalis",
+                price: 249,
+                image: "https://plus.unsplash.com/premium_photo-1711208803998-cc4f1cd1ba18?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8VG9ydHVlJTIwTCVDMyVBOW9wYXJkfGVufDB8fDB8fHww",
+                description: "Tortue terrestre africaine au magnifique motif léopard.",
+                category: "reptiles",
+                stock: 5,
+                certificate: "CITES Annex II",
+                age: "3 ans",
+                origin: "Afrique du Sud"
+            },
+            {
+                id: 8,
+                name: "Caméléon Panthère",
+                scientific: "Furcifer pardalis",
+                price: 690,
+                image: "https://images.unsplash.com/photo-1542879418-c6c556ff5690?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2FtJUMzJUE5bCVDMyVBOW9uJTIwUGFudGglQzMlQThyZXxlbnwwfHwwfHx8MA%3D%3D",
+                description: "Reptile aux couleurs hypnotiques, capable de changer de couleur.",
+                category: "reptiles",
+                stock: 6,
+                certificate: "CITES Annex II",
+                age: "1 an",
+                origin: "Madagascar"
+            },
+            {
+                id: 9,
+                name: "Perroquet Jaco",
+                scientific: "Psittacus erithacus",
+                price: 1200,
+                image: "https://media.istockphoto.com/id/2215405990/fr/photo/perroquet-gris.webp?a=1&b=1&s=612x612&w=0&k=20&c=bwot87oFz1gfwe8oTsIM_a8JlAfwdKo2am8S-4R4PNw=",
+                description: "L'un des perroquets les plus intelligents au monde, excellent parleur.",
+                category: "birds",
+                stock: 4,
+                certificate: "CITES Annex I",
+                age: "2 ans",
+                origin: "Congo"
+            },
+            {
+                id: 10,
+                name: "Touraco à huppe blanche",
+                scientific: "Chien sauvage d'Afrique",
+                price: 3200,
+                image: "https://plus.unsplash.com/premium_photo-1729532974421-c9bd5d3df209?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VG91cmFjbyUyMCVDMyVBMCUyMGh1cHBlJTIwYmxhbmNoZXxlbnwwfHwwfHx8MA%3D%3D",
+                description: "Prédateur social rare, en danger, connu pour ses tactiques de chasse en meute.",
+                category: "birds",
+                stock: 2,
+                certificate: "CITES Annex II",
+                age: "1 an",
+                origin: "Nigeria"
+            },
+            {
+                id: 11,
+                name: "Lycaon",
+                scientific: "Tauraco leucolophus",
+                price: 7000,
+                image: "https://images.unsplash.com/photo-1713888478501-1caea7b9cda4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8THljYW9ufGVufDB8fDB8fHww",
+                description: "Oiseau magnifique aux couleurs vives, originaire d'Afrique de l'Ouest.",
+                category: "felines",
+                stock: 3,
+                certificate: "CITES Annex II",
+                age: "1 an",
+                origin: "Afrique du Sud (Parc Kruger), Tanzanie, Mozambique (Réserve de Niassa), Botswana"
+            },
+            {
+                id: 12,
+                name: "Aardvark",
+                scientific: "Oryctérope du Cap",
+                price: 2000,
+                image: "https://plus.unsplash.com/premium_photo-1661816310553-8c86f8e1e0a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8T3J5Y3QlQzMlQTlyb3BlJTIwZHUlMjBDYXB8ZW58MHx8MHx8fDA%3D",
+                description: "Animal nocturne, solitaire et à l'apparence unique. Difficile à repérer car il vit dans des terriers Afrique du Sud (Kwandwe, Karoo), Namibie (Damaraland), Botswana (Makgadikgadi Pans).",
+                category: "felines",
+                stock: 4,
+                certificate: "CITES Annex II",
+                age: "1 an",
+                origin: "Afrique du Sud (Kwandwe, Karoo), Namibie (Damaraland), Botswana (Makgadikgadi Pans)."
+            },
+             {
+                id: 13,
+                name: "Ratel",
+                scientific: "Zorille du Cap",
+                price: 4000,
+                image: "https://media.istockphoto.com/id/2204265755/fr/photo/un-blaireau-%C3%A0-miel-en-habitat-naturel-d%C3%A9sert-du-kalahari-afrique-du-sud.webp?a=1&b=1&s=612x612&w=0&k=20&c=WPe3kHkdgNVlNA7TKhnCmp-xmiQr_d3cg2vjo3G0jJ8=",
+                description: "Connu pour son intrépidité légendaire. Peu menacé mais discret et difficile à observer,Afrique du Sud",
+                category: "felines",
+                stock: 2,
+                certificate: "CITES Annex II",
+                age: "1 an",
+                origin: "Afrique du Sud"
+            },
+             {
+                id: 14,
+                name: "Girafe Masaï",
+                scientific: "Girafe Masaï",
+                price: 5000,
+                image: "https://images.unsplash.com/photo-1679546251767-53f7cbb461ba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8R2lyYWZlJTIwTWFzYSVDMyVBRnxlbnwwfHwwfHx8MA%3D%3D",
+                description: "Sous-espèce endémique de Tanzanie. Menacée par le braconnage pour sa peau, sa viande et ses os",
+                category: "primates",
+                stock: 3,
+                certificate: "CITES Annex II",
+                age: "1 an",
+                origin: "Tanzania"
+            },
+             {
+                id: 15,
+                name: "Panthère noire",
+                scientific: "Variante mélanique du léopard",
+                price: 17000,
+                image: "https://plus.unsplash.com/premium_photo-1719842310360-c766d2bcfbf2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UGFudGglQzMlQThyZSUyMG5vaXJlfGVufDB8fDB8fHww",
+                description: "Variante mélanique du léopard (ou de la panthère), extrêmement rare et difficile à filmer",
+                category: "felines",
+                stock: 2,
+                certificate: "CITES Annex II",
+                age: "1 an",
+                origin: "Kenya"
+            },
+            {
+                id: 16,
+                name: "margouillat d'afrique",
+                scientific: "l'Agame des colons",
+                price: 900,
+                image: "https://images.unsplash.com/photo-1728830173309-2d44b4a01cbc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QWdhbWElMjBhZ2FtYXxlbnwwfHwwfHx8MA%3D%3D",
+                description: "C'est un lézard courant et facile à observer, plutôt que rare.",
+                category: "primates",
+                stock: 9,
+                certificate: "CITES Annex II",
+                age: "1 an",
+                origin: "Afrique de l'Ouest"
+            }
+        ];
+
+        // Articles détaillés
+        const articles = [
+            {
+                id: 1,
+                title: "Guide d'Élevage Responsable",
+                image: "https://images.unsplash.com/photo-1515955033876-427697de0e1d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8R3VpZGUlMjBkJyVDMyU4OWxldmFnZSUyMFJlc3BvbnNhYmxlfGVufDB8fDB8fHww",
+                excerpt: "Apprenez comment prendre soin de votre animal exotique dans les meilleures conditions.",
+                content: `
+                    <h2>Guide Complet d'Élevage Responsable</h2>
+                    <p>L'élevage d'animaux exotiques nécessite des connaissances spécifiques et un engagement sérieux. Voici nos recommandations :</p>
+                    
+                    <h3>1. Habitat et Environnement</h3>
+                    <p>Chaque espèce a des besoins spécifiques en termes d'espace, de température et d'humidité.</p>
+                    
+                    <h3>2. Alimentation</h3>
+                    <p>Une alimentation adaptée est cruciale pour la santé de l'animal.</p>
+                    
+                    <h3>3. Soins Vétérinaires</h3>
+                    <p>Il est essentiel de trouver un vétérinaire spécialisé dans les animaux exotiques.</p>
+                    
+                    <p>N'hésitez pas à nous contacter pour des conseils personnalisés selon l'animal que vous avez choisi.</p>
+                `
+            },
+            {
+                id: 2,
+                title: "Législation Internationale",
+                image: "https://media.istockphoto.com/id/1399942718/fr/photo/marteau-marteau-et-globe-de-verre-sur-fond-bleu.webp?a=1&b=1&s=612x612&w=0&k=20&c=xPschAMoUgiwCrpcOj7gRCMm4QCVMAfwjndmUnyVgok=",
+                excerpt: "Tout ce que vous devez savoir sur les lois CITES et les réglementations d'importation.",
+                content: `
+                    <h2>Législation Internationale sur le Commerce d'Animaux Exotiques</h2>
+                    
+                    <h3>La Convention CITES</h3>
+                    <p>La Convention sur le commerce international des espèces de faune et de flore sauvages menacées d'extinction (CITES) réglemente le commerce des animaux exotiques.</p>
+                    
+                    <h3>Documents Requis</h3>
+                    <p>Pour importer un animal exotique, vous aurez besoin de certificats spécifiques.</p>
+                    
+                    <h3>Nos Garanties</h3>
+                    <p>Tous nos animaux sont fournis avec les documents légaux nécessaires.</p>
+                `
+            },
+            {
+                id: 3,
+                title: "Soins Vétérinaires Spécialisés",
+                image: "https://images.unsplash.com/photo-1733783489145-f3d3ee7a9ccf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U29pbnMlMjBWJUMzJUE5dCVDMyVBOXJpbmFpcmVzJTIwU3AlQzMlQTljaWFsaXMlQzMlQTlzfGVufDB8fDB8fHww",
+                excerpt: "Notre réseau de vétérinaires spécialisés dans la faune exotique.",
+                content: `
+                    <h2>Réseau de Vétérinaires Spécialisés en Faune Exotique</h2>
+                    
+                    <p>La santé de votre animal est notre priorité. Nous travaillons avec un réseau international de vétérinaires spécialisés.</p>
+                    
+                    <h3>Services Vétérinaires Disponibles</h3>
+                    <p>Consultations spécialisées, vaccinations, chirurgie, diagnostics et soins d'urgence.</p>
+                    
+                    <h3>Conseils de Prévention</h3>
+                    <p>Pour maintenir votre animal en bonne santé : contrôles réguliers, vermifugation, surveillance du comportement.</p>
+                `
+            }
+        ];
+
+        let cart = [];
+        let orders = JSON.parse(localStorage.getItem('efa_orders')) || [];
+        let currentFilter = 'all';
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function() {
+            displayAnimals();
+            displayArticles();
+            displayOrders();
+            updateCart();
+            setupMobileMenu();
+            
+            // Afficher l'adresse ETH
+            document.getElementById('ethAddress').textContent = ETH_ADDRESS;
+        });
+
+        // Menu mobile
+        function setupMobileMenu() {
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.getElementById('navMenu');
+            
+            if (!mobileBtn || !navMenu) return;
+            
+            mobileBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                mobileBtn.innerHTML = navMenu.classList.contains('active') ? 
+                    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+            
+            // Fermer le menu en cliquant sur un lien
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    mobileBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    
+                    // Mettre à jour la classe active
+                    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                    link.classList.add('active');
+                });
+            });
+        }
+
+        // Video Modal Functions
+        function openVideoModal() {
+            const videoModal = document.getElementById('videoModal');
+            if (videoModal) {
+                videoModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Empêcher le défilement
+            }
+        }
+
+        function closeVideoModal() {
+            const videoModal = document.getElementById('videoModal');
+            if (videoModal) {
+                videoModal.classList.remove('active');
+                document.body.style.overflow = 'auto'; // Réactiver le défilement
+            }
+        }
+
+        // Fermer la modal vidéo en cliquant en dehors
+        document.getElementById('videoModal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVideoModal();
+            }
+        });
+
+        // Fermer la modal vidéo avec la touche Echap
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeVideoModal();
+                closeArticleModal();
+                const cartModal = document.getElementById('cartModal');
+                if (cartModal && cartModal.classList.contains('active')) {
+                    toggleCart();
+                }
+            }
+        });
+
+        // Affichage des animaux
+        function displayAnimals() {
+            const grid = document.getElementById('animalsGrid');
+            if (!grid) return;
+            
+            const filteredAnimals = currentFilter === 'all' 
+                ? animals 
+                : animals.filter(animal => animal.category === currentFilter);
+            
+            if (filteredAnimals.length === 0) {
+                grid.innerHTML = '<p style="text-align: center; grid-column: 1/-1; color: #666; font-size: 1.2rem; padding: 2rem;">Aucun animal disponible dans cette catégorie.</p>';
+                return;
+            }
+            
+            grid.innerHTML = filteredAnimals.map(animal => `
+                <div class="animal-card" data-category="${animal.category}">
+                    <div class="animal-badge">${animal.certificate}</div>
+                    <img src="${animal.image}" alt="${animal.name}" class="animal-img" loading="lazy">
+                    <div class="animal-info">
+                        <h3 class="animal-name">${animal.name}</h3>
+                        <p class="animal-scientific">${animal.scientific}</p>
+                        <p style="margin: 1rem 0; color: #666; font-size: 0.9rem;">${animal.description}</p>
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin: 1rem 0;">
+                            <div class="animal-price">${animal.price.toLocaleString('fr-FR')} €</div>
+                            <div style="color: #27ae60; font-weight: 600; font-size: 0.9rem;">
+                                <i class="fas fa-box"></i> ${animal.stock} disponible${animal.stock > 1 ? 's' : ''}
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="addToCart(${animal.id})" ${animal.stock === 0 ? 'disabled style="opacity: 0.5; cursor: not-allowed;"' : ''}>
+                            <i class="fas fa-cart-plus"></i> ${animal.stock === 0 ? 'Rupture de stock' : 'Ajouter au panier'}
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filtrage
+        function filterAnimals(category) {
+            currentFilter = category;
+            
+            // Mettre à jour les boutons actifs
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            displayAnimals();
+        }
+
+        // Affichage des articles
+        function displayArticles() {
+            const grid = document.getElementById('articlesGrid');
+            if (!grid) return;
+            
+            grid.innerHTML = articles.map(article => `
+                <div class="article-card">
+                    <img src="${article.image}" alt="${article.title}" class="article-img" loading="lazy">
+                    <div class="article-content">
+                        <h3 style="margin-bottom: 1rem; color: var(--dark);">${article.title}</h3>
+                        <p style="margin-bottom: 1rem; color: #666;">${article.excerpt}</p>
+                        <button class="btn btn-secondary" onclick="openArticleModal(${article.id})" style="width: 100%;">
+                            <i class="fas fa-book-open"></i> Lire l'article complet
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Ouvrir modal article
+        function openArticleModal(articleId) {
+            const article = articles.find(a => a.id === articleId);
+            if (!article) return;
+            
+            const modalContent = document.getElementById('articleModalContent');
+            modalContent.innerHTML = `
+                <h2 style="margin-bottom: 1rem; color: var(--dark);">${article.title}</h2>
+                <img src="${article.image}" alt="${article.title}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <div style="line-height: 1.6;">
+                    ${article.content}
+                </div>
+            `;
+            
+            document.getElementById('articleModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Fermer modal article
+        function closeArticleModal() {
+            document.getElementById('articleModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Panier
+        function addToCart(animalId) {
+            const animal = animals.find(a => a.id === animalId);
+            
+            if (!animal || animal.stock === 0) {
+                showNotification('Cet animal n\'est plus disponible', 'error');
+                return;
+            }
+            
+            const existingItem = cart.find(item => item.id === animalId);
+            
+            if (existingItem) {
+                if (existingItem.quantity >= animal.stock) {
+                    showNotification('Stock limité pour cet animal', 'warning');
+                    return;
+                }
+                existingItem.quantity++;
+            } else {
+                cart.push({
+                    ...animal,
+                    quantity: 1
+                });
+            }
+            
+            updateCart();
+            showNotification(`${animal.name} ajouté au panier`, 'success');
+        }
+
+        function updateCart() {
+            const cartCount = document.querySelector('.cart-count');
+            const cartItems = document.getElementById('cartItems');
+            
+            if (!cartCount || !cartItems) return;
+            
+            // Mettre à jour le compteur
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCount.textContent = totalItems;
+            
+            // Mettre à jour le contenu du panier
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p style="text-align: center; color: #888; padding: 1rem 0;">Votre panier est vide</p>';
+                const cartTotal = document.getElementById('cartTotal');
+                if (cartTotal) cartTotal.innerHTML = '';
+                return;
+            }
+            
+            cartItems.innerHTML = cart.map(item => `
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee;">
+                    <div style="flex: 1;">
+                        <strong>${item.name}</strong>
+                        <p style="color: #666; font-size: 0.9rem; margin-top: 0.3rem;">${item.price.toLocaleString('fr-FR')} € × ${item.quantity}</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <button onclick="updateQuantity(${item.id}, -1)" style="background: #eee; border: none; width: 25px; height: 25px; border-radius: 50%; cursor: pointer; font-weight: bold;">-</button>
+                        <span style="font-weight: 600;">${item.quantity}</span>
+                        <button onclick="updateQuantity(${item.id}, 1)" style="background: #eee; border: none; width: 25px; height: 25px; border-radius: 50%; cursor: pointer; font-weight: bold;">+</button>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Mettre à jour le total
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const cartTotal = document.getElementById('cartTotal');
+            if (cartTotal) {
+                cartTotal.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; font-size: 1.1rem; font-weight: 600;">
+                        <span>Total :</span>
+                        <span>${total.toLocaleString('fr-FR')} €</span>
+                    </div>
+                `;
+            }
+        }
+
+        function updateQuantity(animalId, change) {
+            const item = cart.find(item => item.id === animalId);
+            if (item) {
+                item.quantity += change;
+                
+                if (item.quantity <= 0) {
+                    cart = cart.filter(item => item.id !== animalId);
+                    showNotification('Article retiré du panier', 'info');
+                }
+                
+                updateCart();
+            }
+        }
+
+        function toggleCart() {
+            const modal = document.getElementById('cartModal');
+            const overlay = document.getElementById('cartOverlay');
+            
+            if (!modal || !overlay) return;
+            
+            modal.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            if (modal.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Passage à la caisse
+        function goToCheckout() {
+            if (cart.length === 0) {
+                showNotification('Votre panier est vide', 'warning');
+                return;
+            }
+            
+            toggleCart();
+            
+            // Afficher la section checkout
+            document.getElementById('checkout').classList.add('active');
+            
+            // Cacher les autres sections
+            document.querySelectorAll('section:not(.checkout)').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Mettre à jour le résumé
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const summary = document.getElementById('checkoutSummary');
+            
+            summary.innerHTML = `
+                <div style="background: var(--light); padding: 1rem; border-radius: 10px; margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary);">
+                        <i class="fas fa-shopping-cart"></i> Résumé de votre commande
+                    </h3>
+                    ${cart.map(item => `
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div>
+                                <strong>${item.name}</strong>
+                                <p style="color: #666; font-size: 0.9rem; margin-top: 0.2rem;">Quantité: ${item.quantity}</p>
+                            </div>
+                            <div style="font-weight: 600;">${(item.price * item.quantity).toLocaleString('fr-FR')} €</div>
+                        </div>
+                    `).join('')}
+                    <div style="padding-top: 1rem; margin-top: 0.5rem; font-size: 1.1rem; font-weight: 600; display: flex; justify-content: space-between; border-top: 1px solid #ddd;">
+                        <span>Total à payer :</span>
+                        <span>${total.toLocaleString('fr-FR')} €</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Copier l'adresse ETH
+        function copyETHAddress() {
+            navigator.clipboard.writeText(ETH_ADDRESS)
+                .then(() => {
+                    showNotification('Adresse ETH copiée !', 'success');
+                })
+                .catch(err => {
+                    showNotification('Erreur lors de la copie', 'error');
+                });
+        }
+
+        // Traitement du paiement
+        function processPayment() {
+            const name = document.getElementById('customerName').value;
+            const email = document.getElementById('customerEmail').value;
+            const address = document.getElementById('customerAddress').value;
+            const phone = document.getElementById('customerPhone').value;
+            
+            if (!name || !email || !address) {
+                showNotification('Veuillez remplir tous les champs obligatoires (*)', 'error');
+                return;
+            }
+            
+            if (!validateEmail(email)) {
+                showNotification('Veuillez entrer une adresse email valide', 'error');
+                return;
+            }
+            
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const orderNumber = 'CMD-' + Date.now().toString().slice(-6);
+            const orderDate = new Date().toLocaleDateString('fr-FR');
+            
+            // Créer la commande
+            const order = {
+                id: orderNumber,
+                date: orderDate,
+                customer: { name, email, address, phone },
+                items: [...cart],
+                total: total,
+                status: 'paid',
+                paymentMethod: 'ETH'
+            };
+            
+            // Ajouter aux commandes
+            orders.unshift(order);
+            
+            // Sauvegarder dans localStorage
+            localStorage.setItem('efa_orders', JSON.stringify(orders));
+            
+            // Générer la facture
+            generateInvoice(order);
+            
+            // Réinitialiser le panier
+            cart = [];
+            updateCart();
+            
+            // Afficher message de confirmation
+            showNotification(`Commande ${orderNumber} confirmée !`, 'success');
+            
+            // Revenir à l'accueil après 2 secondes
+            setTimeout(() => {
+                // Réafficher toutes les sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'block';
+                });
+                
+                // Cacher le checkout
+                document.getElementById('checkout').classList.remove('active');
+                
+                // Réinitialiser le formulaire
+                document.getElementById('checkoutForm').reset();
+                
+                // Mettre à jour l'affichage des commandes
+                displayOrders();
+                
+                // Scroll vers le haut
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 2000);
+        }
+
+        // Validation email
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // Affichage des commandes
+        function displayOrders() {
+            const ordersList = document.getElementById('ordersList');
+            const noOrdersMessage = document.getElementById('noOrdersMessage');
+            
+            if (!ordersList) return;
+            
+            if (orders.length === 0) {
+                if (noOrdersMessage) noOrdersMessage.style.display = 'block';
+                ordersList.innerHTML = '<p style="text-align: center; color: #666; padding: 2rem;">Aucune commande pour le moment. Passez votre première commande !</p>';
+                return;
+            }
+            
+            if (noOrdersMessage) noOrdersMessage.style.display = 'none';
+            
+            ordersList.innerHTML = orders.map(order => `
+                <div class="order-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div>
+                            <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Commande ${order.id}</h3>
+                            <p style="color: #666; font-size: 0.9rem;">
+                                <i class="fas fa-calendar"></i> ${order.date} 
+                                | <i class="fas fa-user"></i> ${order.customer.name}
+                            </p>
+                        </div>
+                        <span class="order-status status-paid">
+                            Payée
+                        </span>
+                    </div>
+                    
+                    <div style="margin: 1rem 0;">
+                        <h4 style="color: var(--dark); margin-bottom: 0.5rem; font-size: 1rem;">Articles :</h4>
+                        ${order.items.map(item => `
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid #eee; font-size: 0.9rem;">
+                                <span>${item.name} × ${item.quantity}</span>
+                                <span style="font-weight: 600;">${(item.price * item.quantity).toLocaleString('fr-FR')} €</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 1rem; border-top: 2px solid var(--light);">
+                        <div>
+                            <p style="font-size: 1.1rem; color: var(--dark); font-weight: 600;">
+                                Total : ${order.total.toLocaleString('fr-FR')} €
+                            </p>
+                        </div>
+                        <button onclick="downloadInvoice('${order.id}')" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                            <i class="fas fa-download"></i> Télécharger la facture
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Générer la facture
+        function generateInvoice(order) {
+            const invoiceContent = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Facture ${order.id}</title>
+                    <meta charset="UTF-8">
+                    <style>
+                        body { 
+                            font-family: Arial, sans-serif; 
+                            margin: 40px; 
+                            line-height: 1.6;
+                            color: #333;
+                        }
+                        .header { 
+                            text-align: center; 
+                            margin-bottom: 40px; 
+                            padding-bottom: 20px;
+                            border-bottom: 3px solid #1a472a;
+                        }
+                        .details { margin: 30px 0; }
+                        table { 
+                            width: 100%; 
+                            border-collapse: collapse; 
+                            margin: 20px 0; 
+                        }
+                        th, td { 
+                            border: 1px solid #ddd; 
+                            padding: 10px; 
+                            text-align: left; 
+                        }
+                        th { 
+                            background-color: #1a472a; 
+                            color: white; 
+                            font-weight: 600;
+                        }
+                        .total { 
+                            text-align: right; 
+                            font-size: 1.2em; 
+                            font-weight: bold; 
+                            margin-top: 20px;
+                            padding-top: 20px;
+                            border-top: 2px solid #1a472a;
+                        }
+                        .payment-info { 
+                            background: #f0f7e8; 
+                            padding: 15px; 
+                            border-radius: 10px; 
+                            margin: 20px 0; 
+                            border-left: 5px solid #d4af37;
+                        }
+                        .important { 
+                            color: #e74c3c; 
+                            font-weight: bold; 
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="header">
+                        <h1 style="color: #1a472a; margin-bottom: 10px;">EXOTIC FAUNA AFRICA</h1>
+                        <h2 style="color: #d4af37;">FACTURE ${order.id}</h2>
+                        <p style="font-size: 1.1em; margin-top: 10px;">Date: ${order.date}</p>
+                    </div>
+                    
+                    <div class="details">
+                        <h3>Informations client :</h3>
+                        <p><strong>Nom :</strong> ${order.customer.name}</p>
+                        <p><strong>Email :</strong> ${order.customer.email}</p>
+                        <p><strong>Téléphone :</strong> ${order.customer.phone || 'Non renseigné'}</p>
+                        <p><strong>Adresse :</strong> ${order.customer.address}</p>
+                    </div>
+                    
+                    <h3>Détails de la commande :</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Animal</th>
+                                <th>Prix unitaire</th>
+                                <th>Quantité</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${order.items.map(item => `
+                                <tr>
+                                    <td>${item.name}</td>
+                                    <td>${item.price.toLocaleString('fr-FR')} €</td>
+                                    <td>${item.quantity}</td>
+                                    <td>${(item.price * item.quantity).toLocaleString('fr-FR')} €</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                    
+                    <div class="total">
+                        <p>TOTAL: ${order.total.toLocaleString('fr-FR')} €</p>
+                    </div>
+                    
+                    <div class="payment-info">
+                        <h3>Instructions de paiement :</h3>
+                        <p><strong>Adresse ETH :</strong> ${ETH_ADDRESS}</p>
+                        <p><strong>Montant envoyé :</strong> ${order.total.toLocaleString('fr-FR')} €</p>
+                        <p class="important">⚠️ Cette facture constitue une preuve d'achat.</p>
+                    </div>
+                    
+                    <div style="margin-top: 40px; font-size: 0.9em; color: #666;">
+                        <p>Exotic Fauna Africa - contact@exoticfauna-africa.com</p>
+                        <p>Merci pour votre confiance.</p>
+                    </div>
+                </body>
+                </html>
+            `;
+            
+            // Créer et télécharger le fichier
+            const blob = new Blob([invoiceContent], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `facture-${order.id}.html`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Télécharger facture existante
+        function downloadInvoice(orderId) {
+            const order = orders.find(o => o.id === orderId);
+            if (order) {
+                generateInvoice(order);
+                showNotification(`Facture ${orderId} téléchargée`, 'success');
+            }
+        }
+
+        // Notifications
+        function showNotification(message, type = 'info') {
+            // Supprimer les notifications existantes
+            document.querySelectorAll('.notification').forEach(n => n.remove());
+            
+            const colors = {
+                success: '#27ae60',
+                error: '#e74c3c',
+                warning: '#f39c12',
+                info: '#3498db'
+            };
+            
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: ${colors[type]};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                z-index: 10000;
+                animation: slideInRight 0.3s ease-out;
+                max-width: 300px;
+                font-family: 'Poppins', sans-serif;
+            `;
+            
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideOutRight 0.3s ease-out forwards';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        // Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                const targetElement = document.querySelector(href);
+                if (targetElement) {
+                    e.preventDefault();
+                    
+                    // Mettre à jour la classe active
+                    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Fermer le menu mobile si ouvert
+                    const navMenu = document.getElementById('navMenu');
+                    const mobileBtn = document.getElementById('mobileMenuBtn');
+                    if (navMenu && navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        mobileBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                    
+                    // Scroll vers l'élément
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Ajouter animation CSS pour les notifications
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideInRight {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOutRight {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
