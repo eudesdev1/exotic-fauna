@@ -1,12 +1,91 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
 <head>
+    <!-- ==================== MÉTADONNÉES SEO ESSENTIELLES ==================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exotic Fauna Africa - Animaux Rares Africains</title>
+    
+    <!-- Titre SEO Optimisé (55-60 caractères max) -->
+    <title>Exotic Fauna Africa | Animaux Rares Africains Certifiés CITES</title>
+    
+    <!-- Meta Description (150-160 caractères) -->
+    <meta name="description" content="Exotic Fauna Africa : spécialiste des animaux rares africains certifiés CITES. Serval, Caracal, Léopard, Primates. Élevage responsable, livraison internationale.">
+    
+    <!-- Keywords Optimisées -->
+    <meta name="keywords" content="animaux rares, animaux exotiques africains, faune africaine, serval d'afrique, caracal, léopard, primates africains, reptiles exotiques, certification CITES, élevage responsable, animaux protégés, achat animaux rares">
+    
+    <!-- Auteur et Droits -->
+    <meta name="author" content="Exotic Fauna Africa">
+    <meta name="copyright" content="© 2025 Exotic Fauna Africa">
+    
+    <!-- Robots et Indexation -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Open Graph pour Réseaux Sociaux -->
+    <meta property="og:title" content="Exotic Fauna Africa | Animaux Rares Africains Certifiés CITES">
+    <meta property="og:description" content="Votre partenaire de confiance pour l'acquisition d'animaux rares d'origine africaine. Élevés avec passion, certifiés CITES, livrés avec soin.">
+    <meta property="og:image" content="https://exotic-fauna-africa.netlify.app/og-image.jpg">
+    <meta property="og:url" content="https://exotic-fauna-africa.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Exotic Fauna Africa">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Exotic Fauna Africa | Animaux Rares Africains">
+    <meta name="twitter:description" content="Spécialiste des animaux rares africains avec certification CITES internationale">
+    <meta name="twitter:image" content="https://exotic-fauna-africa.netlify.app/twitter-image.jpg">
+    <meta name="twitter:site" content="@ExoticFaunaAFR">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://exotic-fauna-africa.netlify.app">
+    
+    <!-- ==================== FAVICON PROFESSIONNEL ==================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231a472a%22/><text x=%2250%22 y=%2265%22 font-family=%22Arial%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23d4af37%22>🦁</text></svg>">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAHWSURBVHja7Jc9S8NAGIYfE2hrFb+g4A8QnBwFB3F0cHV3cXBw/gN/gKggOIggOIq4iE6i4CAiSq0iWq1iv0iItJzkHDokSXPhltBe8MBw3F3evO/7JXfGGGOMMcYYY4wxxhhjTAnkKBsAzwXr14B1f/0M6AOPwGXR9dcJ9Aq2AnwAX8A4sAfs+ms9YLNo+zMJOAv8nwQWgW3/vwWsAY9F2580BIPAKrAIPPm2LrBUtP1JQ3AOXABHwCswC+wA50XbX1EIABaAFeDNt3WApaz2NwV0gEe/ruu3pw3BKnDi138AR8A4sJ7V/saAe2ACOPZtHd8WK8Cmb78D7oB5YAO4iRMCfx54B94jtp0E2m5SXQ44Hvw6oA3MAHfAXtb9T9pG8BaoFtAGloFp4DZL/YcEmADawB1wGWhv+vaBfTWAi0D7qa/8KaAZ2DYF7AL3wCvw5LeZBeaAm6wCjAMLwBFwG9h2D9j17QP7ioA0o3Dg8x2iBfwC14H2pm8f2FdSCH6A14ht+759YF9JIZBIJBLJqApQ9f+jOAp8AQ3gpUwC1IFD4Ac4KIsATaAFfAN7ZRGgARwD38B2WQRo+fp/A1tlEaANfABrwGNZBLgCusAq8FSWUdgFesAC8FwWAd78KGwCL2UR4NOPwhngtSwC9P0obAC9sggA8OpH4TTwXhYB+n4U1oGvsgjw40dhFfgtiwBgjDHGGGOMMcYYY4wxx/wDvwMAeVz0mNpPvasAAAAASUVORK5CYII=">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAEkSURBVHjaYvz//z8DJYCRUgZgA4y4FDIyMjJgU8jExPT/379/DBgG/P//H5sB/////48igU0hAwMDuvj///84Nfj7+2M14P///8gKsSmEacBrAEwDc4DS7x8M/2dYMDAwVDAw4NQA0YRTAbIBcA0MDCgK/v//z4CsAaIBpwJsBiArQNaAogGvAdgMQFaAogGvAbgMwKoBrwG4DMCqAa8B+AzAqAGvAfgMwKgBrwH4DMAowP9/nBpg/P///39iAxlmgBGu+uHv74/TAKwaSBmIsWnAaQApBmDUgNcAUmoQRg14DQCAtgZq2qgyswMAAPD0s8rrF9PqAAAAAElFTkSuQmCC">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231a472a%22/><text x=%2250%22 y=%2265%22 font-family=%22Arial%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23d4af37%22>🦁</text></svg>">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231a472a%22/><text x=%2250%22 y=%2265%22 font-family=%22Arial%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23d4af37%22>🦁</text></svg>">
+    
+    <!-- ==================== DONNÉES STRUCTURÉES SCHEMA.ORG ==================== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "PetStore",
+        "name": "Exotic Fauna Africa",
+        "description": "Spécialiste des animaux rares africains avec certification CITES internationale",
+        "url": "https://exotic-fauna-africa.netlify.app",
+        "logo": "https://exotic-fauna-africa.netlify.app/favicon.ico",
+        "image": "https://exotic-fauna-africa.netlify.app/og-image.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Paris",
+            "addressCountry": "FR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "exoticfaunaafrica@outlook.com",
+            "contactType": "customer service",
+            "availableLanguage": ["French"]
+        },
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "priceRange": "€€€",
+        "currenciesAccepted": "EUR, ETH",
+        "hasCertification": "CITES Annex I, II, B"
+    }
+    </script>
+    
+    <!-- ==================== CSS ET FONTS ==================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
     <style>
+        /* ==================== VARIABLES CSS ==================== */
         :root {
             --primary: #1a472a;
             --secondary: #d4af37;
@@ -25,6 +104,11 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background-color: var(--light);
@@ -33,17 +117,91 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 {
+        /* ==================== ACCESSIBILITÉ ==================== */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            background: var(--primary);
+            color: var(--white);
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            z-index: 1001;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* ==================== TYPOGRAPHIE SEO ==================== */
+        h1, h2, h3, h4, h5, h6 {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             color: var(--dark);
+            line-height: 1.2;
+            margin-bottom: 1rem;
         }
 
-        /* Header & Navigation */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary);
+        }
+
+        /* ==================== HEADER ET NAVIGATION ==================== */
         header {
             background: linear-gradient(135deg, var(--dark), var(--primary));
             color: var(--white);
-            padding: 1.2rem 0;
+            padding: 1rem 0;
             position: fixed;
             width: 100%;
             top: 0;
@@ -68,11 +226,6 @@
             font-weight: 700;
             color: var(--secondary);
             text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .logo:hover {
-            transform: scale(1.05);
         }
 
         .logo-icon {
@@ -88,54 +241,30 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            gap: 2rem;
+            align-items: center;
         }
 
         nav a {
             color: var(--white);
-            text-decoration: none;
             font-weight: 500;
-            font-size: 1.1rem;
             padding: 0.5rem 1rem;
             border-radius: 30px;
             transition: var(--transition);
-            position: relative;
         }
 
-        nav a:hover, nav a.active {
+        nav a:hover,
+        nav a.active {
             color: var(--secondary);
             background: rgba(255, 255, 255, 0.1);
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: var(--secondary);
-            transition: var(--transition);
-            transform: translateX(-50%);
-        }
-
-        nav a:hover::after {
-            width: 70%;
         }
 
         .cart-icon {
             position: relative;
             cursor: pointer;
-            font-size: 1.4rem;
             padding: 0.5rem;
             border-radius: 50%;
             background: rgba(212, 175, 55, 0.1);
-            transition: var(--transition);
-        }
-
-        .cart-icon:hover {
-            background: rgba(212, 175, 55, 0.2);
-            transform: rotate(15deg);
         }
 
         .cart-count {
@@ -163,13 +292,12 @@
             cursor: pointer;
         }
 
-        /* Hero Section */
+        /* ==================== HERO SECTION ==================== */
         .hero {
             background: linear-gradient(rgba(13, 40, 24, 0.85), rgba(26, 71, 42, 0.9));
             color: var(--white);
-            padding: 10rem 2rem 6rem;
+            padding: 8rem 2rem 4rem;
             text-align: center;
-            margin-top: 80px;
             position: relative;
             overflow: hidden;
         }
@@ -181,9 +309,9 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://media.istockphoto.com/id/1184449355/fr/photo/salutation-rouge-de-panda-avec-la-patte-augment%C3%A9e.webp?a=1&b=1&s=612x612&w=0&k=20&c=jrgnzd3eF5RPolXYWa3thZudPDqVi0GYM3xgFjIUw_g=') center/cover;
+            background: url('https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
             z-index: -1;
-            opacity: 0.7;
+            opacity: 0.4;
         }
 
         .hero-content {
@@ -194,10 +322,8 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
             color: var(--white);
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
             animation: fadeInUp 1s ease-out;
         }
 
@@ -258,35 +384,125 @@
             transform: translateY(-5px);
         }
 
-        /* Features Section */
+        /* ==================== MODALE VIDÉO ==================== */
+        .video-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .video-modal.active {
+            display: flex;
+        }
+
+        .video-modal-content {
+            width: 90%;
+            max-width: 900px;
+            background: #000;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Ratio 16:9 */
+            height: 0;
+            background: #000;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .close-video {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            padding: 0.5rem;
+            z-index: 2001;
+        }
+
+        .close-video:hover {
+            color: var(--secondary);
+            transform: scale(1.1);
+        }
+
+        .video-title {
+            padding: 1rem;
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .video-controls {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .video-controls button {
+            background: var(--secondary);
+            color: var(--dark);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .video-controls button:hover {
+            background: #e6c158;
+            transform: scale(1.05);
+        }
+
+        /* ==================== FEATURES SECTION ==================== */
         .features {
-            padding: 4rem 2rem;
+            padding: 5rem 2rem;
             background: var(--white);
         }
 
         .section-title {
             text-align: center;
             margin-bottom: 3rem;
-            position: relative;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            display: inline-block;
-            position: relative;
-            padding-bottom: 1rem;
-        }
-
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            border-radius: 2px;
         }
 
         .features-grid {
@@ -315,10 +531,9 @@
         .feature-icon {
             font-size: 2.5rem;
             color: var(--secondary);
-            margin-bottom: 1.5rem;
             background: linear-gradient(135deg, var(--primary), var(--dark));
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -326,9 +541,9 @@
             margin: 0 auto 1.5rem;
         }
 
-        /* Shop Section */
+        /* ==================== SHOP SECTION ==================== */
         .shop {
-            padding: 4rem 2rem;
+            padding: 5rem 2rem;
             background: linear-gradient(135deg, #f8f5f0 0%, #e8e2d6 100%);
         }
 
@@ -351,7 +566,8 @@
             transition: var(--transition);
         }
 
-        .filter-btn.active, .filter-btn:hover {
+        .filter-btn.active,
+        .filter-btn:hover {
             background: var(--primary);
             color: var(--white);
             transform: scale(1.05);
@@ -362,7 +578,7 @@
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 2rem;
             max-width: 1300px;
-            margin: 0 auto 3rem;
+            margin: 0 auto;
         }
 
         .animal-card {
@@ -394,9 +610,10 @@
 
         .animal-img {
             width: 100%;
-            height: 200px;
+            height: 250px;
             object-fit: cover;
             transition: var(--transition);
+            background-color: #f0f0f0;
         }
 
         .animal-card:hover .animal-img {
@@ -410,7 +627,6 @@
         .animal-name {
             font-size: 1.3rem;
             margin-bottom: 0.5rem;
-            color: var(--dark);
         }
 
         .animal-scientific {
@@ -427,9 +643,9 @@
             margin: 1rem 0;
         }
 
-        /* Articles Section */
+        /* ==================== ARTICLES SECTION ==================== */
         .articles {
-            padding: 4rem 2rem;
+            padding: 5rem 2rem;
             background: var(--white);
         }
 
@@ -463,7 +679,7 @@
             padding: 1.5rem;
         }
 
-        /* Commandes Section */
+        /* ==================== COMMANDES SECTION ==================== */
         .orders-section {
             padding: 6rem 2rem 4rem;
             background: var(--light);
@@ -506,7 +722,7 @@
             color: #155724;
         }
 
-        /* Cart Modal */
+        /* ==================== CART MODAL ==================== */
         .cart-modal {
             position: fixed;
             top: 0;
@@ -539,7 +755,7 @@
             display: block;
         }
 
-        /* Checkout */
+        /* ==================== CHECKOUT ==================== */
         .checkout {
             padding: 6rem 2rem 4rem;
             max-width: 800px;
@@ -572,7 +788,7 @@
             align-items: center;
         }
 
-        /* Article Modal */
+        /* ==================== ARTICLE MODAL ==================== */
         .article-modal {
             position: fixed;
             top: 0;
@@ -613,78 +829,7 @@
             color: var(--dark);
         }
 
-        /* Video Modal */
-        .video-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1003;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-        }
-
-        .video-modal.active {
-            display: flex;
-            animation: fadeIn 0.3s ease-out;
-        }
-
-        .video-modal-content {
-            width: 90%;
-            max-width: 900px;
-            background: #000;
-            border-radius: 15px;
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .close-video {
-            position: absolute;
-            top: -40px;
-            right: 0;
-            background: none;
-            border: none;
-            color: var(--white);
-            font-size: 2rem;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .close-video:hover {
-            color: var(--secondary);
-            transform: scale(1.1);
-        }
-
-        .video-title {
-            padding: 1rem;
-            background: var(--primary);
-            color: var(--white);
-            text-align: center;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        /* Footer */
+        /* ==================== FOOTER ==================== */
         footer {
             background: linear-gradient(135deg, var(--dark), var(--primary));
             color: var(--white);
@@ -714,7 +859,7 @@
             color: rgba(255, 255, 255, 0.7);
         }
 
-        /* Animations */
+        /* ==================== ANIMATIONS ==================== */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -731,7 +876,7 @@
             to { opacity: 1; }
         }
 
-        /* Responsive */
+        /* ==================== RESPONSIVE DESIGN ==================== */
         @media (max-width: 768px) {
             .nav-container {
                 padding: 0 1rem;
@@ -740,10 +885,10 @@
             .mobile-menu-btn {
                 display: block;
             }
-            
+
             nav ul {
                 position: fixed;
-                top: 80px;
+                top: 70px;
                 left: 0;
                 width: 100%;
                 background: var(--dark);
@@ -755,79 +900,110 @@
                 z-index: 999;
                 text-align: center;
             }
-            
+
             nav ul.active {
                 transform: translateY(0);
                 opacity: 1;
             }
-            
+
             .hero {
-                padding: 7rem 1rem 4rem;
+                padding: 6rem 1rem 3rem;
             }
-            
+
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
-            
+
             .hero h1 span {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
-            
+
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
                 gap: 1rem;
             }
-            
-            .cart-modal {
-                width: 100%;
-                right: -100%;
+
+            h2 {
+                font-size: 2rem;
             }
-            
-            .orders-container {
-                padding: 1rem;
+
+            .features-grid,
+            .animals-grid,
+            .articles-grid {
+                grid-template-columns: 1fr;
             }
-            
-            .filters {
-                gap: 0.5rem;
-            }
-            
+
             .filter-btn {
                 padding: 0.6rem 1rem;
                 font-size: 0.9rem;
             }
-            
+
             .video-modal-content {
                 width: 95%;
             }
-            
+
             .close-video {
-                top: -35px;
+                top: -40px;
                 font-size: 1.5rem;
             }
+
+            .cart-modal {
+                width: 100%;
+                right: -100%;
+            }
+
+            .orders-container {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero h1 span {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* ==================== SEO OPTIMIZATIONS ==================== */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <!-- Skip link pour l'accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
     <!-- Header -->
-    <header>
+    <header role="banner">
         <div class="nav-container">
             <a href="#home" class="logo">
-                <i class="fas fa-paw logo-icon"></i>
-                Exotic Fauna Africa
+                <i class="fas fa-paw logo-icon" aria-hidden="true"></i>
+                <span itemprop="name">Exotic Fauna Africa</span>
             </a>
             
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu mobile" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
             
-            <nav>
+            <nav role="navigation" aria-label="Navigation principale">
                 <ul id="navMenu">
                     <li><a href="#home" class="active">Accueil</a></li>
                     <li><a href="#shop">Boutique</a></li>
                     <li><a href="#articles">Articles</a></li>
                     <li><a href="#orders">Commandes</a></li>
-                    <li class="cart-icon" onclick="toggleCart()">
+                    <li class="cart-icon" onclick="toggleCart()" aria-label="Panier d'achat" role="button" tabindex="0">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count">0</span>
                     </li>
@@ -836,110 +1012,36 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Exotic Fauna <span>Africa</span></h1>
-            <p>Votre partenaire de confiance pour l'acquisition d'animaux rares d'origine africaine. Élevés avec passion, certifiés CITES, livrés avec soin.</p>
-            <div class="cta-buttons">
-                <a href="#shop" class="btn btn-primary">
-                    <i class="fas fa-shopping-bag"></i> Explorer la Boutique
-                </a>
-                <button onclick="openVideoModal()" class="btn btn-secondary">
-                    <i class="fas fa-play-circle"></i> Voir la Vidéo
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <div class="section-title">
-            <h2>Pourquoi Nous Choisir</h2>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>Certifié CITES</h3>
-                <p>Certification internationale garantissant la légalité et la traçabilité de chaque animal.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <h3>Élevage Responsable</h3>
-                <p>Conditions optimales d'élevage sous supervision vétérinaire permanente.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <h3>Livraison Internationale</h3>
-                <p>Transport spécialisé avec suivi en temps réel et garantie d'arrivée en bonne santé.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Shop -->
-    <section class="shop" id="shop">
-        <div class="section-title">
-            <h2>Notre Collection Exclusive</h2>
-        </div>
-        
-        <div class="filters">
-            <button class="filter-btn active" onclick="filterAnimals('all')">Tous</button>
-            <button class="filter-btn" onclick="filterAnimals('felines')">Félins</button>
-            <button class="filter-btn" onclick="filterAnimals('primates')">Primates</button>
-            <button class="filter-btn" onclick="filterAnimals('reptiles')">Reptiles</button>
-            <button class="filter-btn" onclick="filterAnimals('birds')">Oiseaux</button>
-        </div>
-        
-        <div class="animals-grid" id="animalsGrid">
-            <!-- Les animaux seront chargés ici par JavaScript -->
-        </div>
-    </section>
-
-    <!-- Articles -->
-    <section class="articles" id="articles">
-        <div class="section-title">
-            <h2>Articles & Conseils</h2>
-        </div>
-        <div class="articles-grid" id="articlesGrid">
-            <!-- Les articles seront chargés ici par JavaScript -->
-        </div>
-    </section>
-
-    <!-- Commandes Section -->
-    <section class="orders-section" id="orders">
-        <div class="orders-container">
-            <div class="section-title">
-                <h2>Mes Commandes</h2>
-            </div>
-            <div id="ordersList">
-                <!-- Les commandes seront affichées ici -->
-                <p id="noOrdersMessage">Aucune commande pour le moment. Passez votre première commande !</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Modal -->
+    <!-- Modale Vidéo -->
     <div class="video-modal" id="videoModal">
         <div class="video-modal-content">
-            <button class="close-video" onclick="closeVideoModal()">
+            <button class="close-video" onclick="closeVideoModal()" aria-label="Fermer la vidéo">
                 <i class="fas fa-times"></i>
             </button>
             <div class="video-title">
                 Exotic Fauna Africa - Notre Mission
             </div>
             <div class="video-container">
-                <!-- La vidéo Pinterest est intégrée ici -->
-                <iframe src="golo.mp4" 
-                        frameborder="0" 
-                        allow="autoplay; encrypted-media" 
-                        allowfullscreen>
-                </iframe>
+                <video id="mainVideo" controls preload="metadata" poster="https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                    <!-- Sources vidéo - Remplacez par votre propre vidéo -->
+                    <source src="golo.mp4" type="video/mp4">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-wild-animals-in-the-forest-43814-large.webm" type="video/webm">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+            <div class="video-controls">
+                <button onclick="playVideo()">
+                    <i class="fas fa-play"></i> Lecture
+                </button>
+                <button onclick="pauseVideo()">
+                    <i class="fas fa-pause"></i> Pause
+                </button>
+                <button onclick="toggleMute()">
+                    <i class="fas fa-volume-up"></i> Son
+                </button>
+                <button onclick="toggleFullscreen()">
+                    <i class="fas fa-expand"></i> Plein écran
+                </button>
             </div>
         </div>
     </div>
@@ -950,7 +1052,7 @@
         <div style="padding: 1.5rem;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
                 <h2>Votre Panier</h2>
-                <button onclick="toggleCart()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark);">×</button>
+                <button onclick="toggleCart()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark);" aria-label="Fermer le panier">×</button>
             </div>
             <div id="cartItems"></div>
             <div id="cartTotal" style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid #eee;"></div>
@@ -988,23 +1090,23 @@
             <form id="checkoutForm" style="margin-top: 2rem;">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
                     <div>
-                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nom complet *</label>
-                        <input type="text" id="customerName" required style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;">
+                        <label for="customerName" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nom complet *</label>
+                        <input type="text" id="customerName" name="customerName" required style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;">
                     </div>
                     <div>
-                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email *</label>
-                        <input type="email" id="customerEmail" required style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;">
+                        <label for="customerEmail" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email *</label>
+                        <input type="email" id="customerEmail" name="customerEmail" required style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;">
                     </div>
                 </div>
                 
                 <div style="margin-bottom: 1rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Adresse de livraison *</label>
-                    <textarea id="customerAddress" required rows="3" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;"></textarea>
+                    <label for="customerAddress" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Adresse de livraison *</label>
+                    <textarea id="customerAddress" name="customerAddress" required rows="3" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;"></textarea>
                 </div>
                 
                 <div style="margin-bottom: 1rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Téléphone</label>
-                    <input type="tel" id="customerPhone" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;">
+                    <label for="customerPhone" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Téléphone</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;">
                 </div>
                 
                 <button type="button" class="btn btn-primary" onclick="processPayment()" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
@@ -1017,19 +1119,146 @@
     <!-- Article Modal -->
     <div class="article-modal" id="articleModal">
         <div class="article-modal-content">
-            <button class="close-article" onclick="closeArticleModal()">×</button>
+            <button class="close-article" onclick="closeArticleModal()" aria-label="Fermer l'article">×</button>
             <div id="articleModalContent">
                 <!-- Contenu de l'article détaillé -->
             </div>
         </div>
     </div>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home" role="main" id="main-content">
+        <div class="hero-content">
+            <h1>Exotic Fauna <span>Africa</span></h1>
+            <p>Votre partenaire de confiance pour l'acquisition d'animaux rares d'origine africaine. Élevés avec passion, certifiés CITES, livrés avec soin.</p>
+            <div class="cta-buttons">
+                <a href="#shop" class="btn btn-primary">
+                    <i class="fas fa-shopping-bag"></i> Explorer la Boutique
+                </a>
+                <button onclick="openVideoModal()" class="btn btn-secondary">
+                    <i class="fas fa-play-circle"></i> Voir la Vidéo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="section-title">
+            <h2>Pourquoi Nous Choisir</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" itemscope itemtype="https://schema.org/Service">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Certifié CITES</h3>
+                <p>Certification internationale garantissant la légalité et la traçabilité de chaque animal.</p>
+            </div>
+            <div class="feature-card" itemscope itemtype="https://schema.org/Service">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Élevage Responsable</h3>
+                <p>Conditions optimales d'élevage sous supervision vétérinaire permanente.</p>
+            </div>
+            <div class="feature-card" itemscope itemtype="https://schema.org/Service">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Livraison Internationale</h3>
+                <p>Transport spécialisé avec suivi en temps réel et garantie d'arrivée en bonne santé.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop" id="shop">
+        <div class="section-title">
+            <h2>Notre Collection Exclusive</h2>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterAnimals('all')">Tous</button>
+            <button class="filter-btn" onclick="filterAnimals('felines')">Félins</button>
+            <button class="filter-btn" onclick="filterAnimals('primates')">Primates</button>
+            <button class="filter-btn" onclick="filterAnimals('reptiles')">Reptiles</button>
+            <button class="filter-btn" onclick="filterAnimals('birds')">Oiseaux</button>
+        </div>
+        
+        <div class="animals-grid" id="animalsGrid">
+            <!-- Contenu généré par JavaScript -->
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles" id="articles">
+        <div class="section-title">
+            <h2>Articles & Conseils</h2>
+        </div>
+        <div class="articles-grid" id="articlesGrid">
+            <!-- Contenu généré par JavaScript -->
+        </div>
+    </section>
+
+    <!-- Commandes Section -->
+    <section class="orders-section" id="orders">
+        <div class="orders-container">
+            <div class="section-title">
+                <h2>Mes Commandes</h2>
+            </div>
+            <div id="ordersList">
+                <!-- Les commandes seront affichées ici -->
+                <p id="noOrdersMessage">Aucune commande pour le moment. Passez votre première commande !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu SEO caché pour améliorer le ranking -->
+    <div class="sr-only" aria-hidden="true">
+        <h1>Exotic Fauna Africa - Spécialiste des Animaux Rares Africains</h1>
+        <h2>Animaux Exotiques d'Afrique Disponibles à l'Achat</h2>
+        <p>Exotic Fauna Africa est votre spécialiste pour l'achat d'animaux rares africains certifiés CITES. Notre collection exclusive comprend des espèces rares comme le Serval d'Afrique, le Caracal, le Léopard d'Afrique, des primates rares, des reptiles exotiques et des oiseaux africains uniques. Tous nos animaux bénéficient de la certification CITES qui garantit la légalité et la traçabilité de chaque spécimen.</p>
+        
+        <h3>Élevage Responsable et Certification CITES</h3>
+        <p>Nous pratiquons un élevage responsable sous supervision vétérinaire permanente. La certification CITES (Convention sur le commerce international des espèces de faune et de flore sauvages menacées d'extinction) assure que tous nos animaux sont élevés et commercialisés dans le respect des réglementations internationales.</p>
+        
+        <h3>Livraison Internationale Sécurisée</h3>
+        <p>Nous organisons des transports spécialisés pour animaux exotiques avec suivi en temps réel. Notre réseau de transporteurs spécialisés garantit l'arrivée en bonne santé de chaque animal dans le monde entier.</p>
+        
+        <h3>Liste des Espèces Disponibles</h3>
+        <ul>
+            <li>Serval d'Afrique (Leptailurus serval) - 8 500 €</li>
+            <li>Caracal (Caracal caracal) - 16 000 €</li>
+            <li>Léopard d'Afrique (Panthera pardus) - 25 000 €</li>
+            <li>Maki Catta (Lemur catta) - 4 500 €</li>
+            <li>Guenon de Brazza (Cercopithecus neglectus) - 3 800 €</li>
+            <li>Python Royal (Python regius) - 400 €</li>
+            <li>Tortue Léopard (Stigmochelys pardalis) - 249 €</li>
+            <li>Caméléon Panthère (Furcifer pardalis) - 690 €</li>
+            <li>Perroquet Jaco (Psittacus erithacus) - 1 200 €</li>
+            <li>Touraco à huppe blanche - 3 200 €</li>
+            <li>Lycaon - 7 000 €</li>
+            <li>Aardvark (Oryctérope du Cap) - 2 000 €</li>
+            <li>Ratel (Zorille du Cap) - 4 000 €</li>
+            <li>Girafe Masaï - 5 000 €</li>
+            <li>Panthère noire - 17 000 €</li>
+            <li>Margouillat d'Afrique - 900 €</li>
+        </ul>
+        
+        <h3>Pourquoi Choisir Exotic Fauna Africa ?</h3>
+        <p>Exotic Fauna Africa se distingue par son expertise en élevage d'animaux rares africains, sa certification CITES complète, son élevage responsable et sa livraison internationale sécurisée. Nous fournissons tous les documents légaux nécessaires et offrons un support continu pour l'élevage de vos animaux exotiques.</p>
+        
+        <h3>Localisation et Contact</h3>
+        <p>Basés à Paris, France, nous servons une clientèle internationale. Contactez-nous à exoticfaunaafrica@outlook.com pour plus d'informations sur nos animaux rares africains disponibles.</p>
+    </div>
+
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div>
                 <div class="footer-logo">
-                    <i class="fas fa-paw"></i> EFA
+                    <i class="fas fa-paw"></i> Exotic Fauna Africa
                 </div>
                 <p>Spécialistes de la faune africaine rare depuis 2005. Certifié CITES et conforme aux normes internationales.</p>
             </div>
@@ -1037,15 +1266,22 @@
             <div>
                 <h3>Contact</h3>
                 <p><i class="fas fa-envelope"></i> exoticfaunaafrica@outlook.com</p>
-                
                 <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
             </div>
             
             <div>
-                <h3>Liens rapides</h3>
-                <p><a href="#shop" style="color: var(--secondary); text-decoration: none;">Boutique</a></p>
-                <p><a href="#articles" style="color: var(--secondary); text-decoration: none;">Articles</a></p>
-                <p><a href="#orders" style="color: var(--secondary); text-decoration: none;">Mes Commandes</a></p>
+                <h3>Navigation</h3>
+                <p><a href="#home">Accueil</a></p>
+                <p><a href="#shop">Boutique</a></p>
+                <p><a href="#articles">Articles</a></p>
+                <p><a href="#orders">Commandes</a></p>
+            </div>
+            
+            <div>
+                <h3>Légal</h3>
+                <p><small>Certification CITES Annex I, II, B</small></p>
+                <p><small>Commerce réglementé international</small></p>
+                <p><small>Tous droits réservés © 2025</small></p>
             </div>
         </div>
         
@@ -1057,11 +1293,13 @@
         </div>
     </footer>
 
+    <!-- JavaScript avec données et fonctionnalités -->
     <script>
-        // Votre adresse ETH
+        // ==================== CONFIGURATION ====================
         const ETH_ADDRESS = "0x530e7ac39c142a899fab6ef30c8ce6faeb1befef";
+        const COMPANY_EMAIL = "exoticfaunaafrica@outlook.com";
         
-        // Base de données des animaux avec URLs d'images fonctionnelles
+        // ==================== DONNÉES DES ANIMAUX ====================
         const animals = [
             {
                 id: 1,
@@ -1072,9 +1310,7 @@
                 description: "Magnifique félin des savanes africaines, connu pour ses longues pattes et son pelage tacheté.",
                 category: "felines",
                 stock: 3,
-                certificate: "CITES Annex B",
-                age: "2 ans",
-                origin: "Afrique de l'Est"
+                certificate: "CITES Annex B"
             },
             {
                 id: 2,
@@ -1085,9 +1321,7 @@
                 description: "Félin majestueux aux oreilles noires caractéristiques, excellent chasseur.",
                 category: "felines",
                 stock: 2,
-                certificate: "CITES Annex II",
-                age: "3 ans",
-                origin: "Afrique du Sud"
+                certificate: "CITES Annex II"
             },
             {
                 id: 3,
@@ -1098,9 +1332,7 @@
                 description: "Un des plus beaux prédateurs africains, nécessitant un espace important.",
                 category: "felines",
                 stock: 1,
-                certificate: "CITES Annex I",
-                age: "4 ans",
-                origin: "Afrique centrale"
+                certificate: "CITES Annex I"
             },
             {
                 id: 4,
@@ -1111,9 +1343,7 @@
                 description: "Lémurien emblématique de Madagascar, sociable et intelligent.",
                 category: "primates",
                 stock: 4,
-                certificate: "CITES Annex I",
-                age: "1 an",
-                origin: "Madagascar"
+                certificate: "CITES Annex I"
             },
             {
                 id: 5,
@@ -1124,9 +1354,7 @@
                 description: "Singe arboricole aux couleurs magnifiques, très apprécié des collectionneurs.",
                 category: "primates",
                 stock: 3,
-                certificate: "CITES Annex II",
-                age: "2 ans",
-                origin: "Congo"
+                certificate: "CITES Annex II"
             },
             {
                 id: 6,
@@ -1137,9 +1365,7 @@
                 description: "Serpent docile au magnifique motif, idéal pour les débutants.",
                 category: "reptiles",
                 stock: 8,
-                certificate: "CITES Annex II",
-                age: "6 mois",
-                origin: "Afrique de l'Ouest"
+                certificate: "CITES Annex II"
             },
             {
                 id: 7,
@@ -1150,9 +1376,7 @@
                 description: "Tortue terrestre africaine au magnifique motif léopard.",
                 category: "reptiles",
                 stock: 5,
-                certificate: "CITES Annex II",
-                age: "3 ans",
-                origin: "Afrique du Sud"
+                certificate: "CITES Annex II"
             },
             {
                 id: 8,
@@ -1163,9 +1387,7 @@
                 description: "Reptile aux couleurs hypnotiques, capable de changer de couleur.",
                 category: "reptiles",
                 stock: 6,
-                certificate: "CITES Annex II",
-                age: "1 an",
-                origin: "Madagascar"
+                certificate: "CITES Annex II"
             },
             {
                 id: 9,
@@ -1176,9 +1398,7 @@
                 description: "L'un des perroquets les plus intelligents au monde, excellent parleur.",
                 category: "birds",
                 stock: 4,
-                certificate: "CITES Annex I",
-                age: "2 ans",
-                origin: "Congo"
+                certificate: "CITES Annex I"
             },
             {
                 id: 10,
@@ -1189,9 +1409,7 @@
                 description: "Prédateur social rare, en danger, connu pour ses tactiques de chasse en meute.",
                 category: "birds",
                 stock: 2,
-                certificate: "CITES Annex II",
-                age: "1 an",
-                origin: "Nigeria"
+                certificate: "CITES Annex II"
             },
             {
                 id: 11,
@@ -1200,11 +1418,9 @@
                 price: 7000,
                 image: "https://images.unsplash.com/photo-1713888478501-1caea7b9cda4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8THljYW9ufGVufDB8fDB8fHww",
                 description: "Oiseau magnifique aux couleurs vives, originaire d'Afrique de l'Ouest.",
-                category: "felines",
+                category: "birds",
                 stock: 3,
-                certificate: "CITES Annex II",
-                age: "1 an",
-                origin: "Afrique du Sud (Parc Kruger), Tanzanie, Mozambique (Réserve de Niassa), Botswana"
+                certificate: "CITES Annex II"
             },
             {
                 id: 12,
@@ -1212,68 +1428,58 @@
                 scientific: "Oryctérope du Cap",
                 price: 2000,
                 image: "https://plus.unsplash.com/premium_photo-1661816310553-8c86f8e1e0a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8T3J5Y3QlQzMlQTlyb3BlJTIwZHUlMjBDYXB8ZW58MHx8MHx8fDA%3D%3D",
-                description: "Animal nocturne, solitaire et à l'apparence unique. Difficile à repérer car il vit dans des terriers Afrique du Sud (Kwandwe, Karoo), Namibie (Damaraland), Botswana (Makgadikgadi Pans).",
-                category: "felines",
+                description: "Animal nocturne, solitaire et à l'apparence unique. Difficile à repérer car il vit dans des terriers.",
+                category: "other",
                 stock: 4,
-                certificate: "CITES Annex II",
-                age: "1 an",
-                origin: "Afrique du Sud (Kwandwe, Karoo), Namibie (Damaraland), Botswana (Makgadikgadi Pans)."
+                certificate: "CITES Annex II"
             },
-             {
+            {
                 id: 13,
                 name: "Ratel",
                 scientific: "Zorille du Cap",
                 price: 4000,
                 image: "https://media.istockphoto.com/id/2204265755/fr/photo/un-blaireau-%C3%A0-miel-en-habitat-naturel-d%C3%A9sert-du-kalahari-afrique-du-sud.webp?a=1&b=1&s=612x612&w=0&k=20&c=WPe3kHkdgNVlNA7TKhnCmp-xmiQr_d3cg2vjo3G0jJ8=",
-                description: "Connu pour son intrépidité légendaire. Peu menacé mais discret et difficile à observer,Afrique du Sud",
-                category: "felines",
+                description: "Connu pour son intrépidité légendaire. Peu menacé mais discret et difficile à observer.",
+                category: "other",
                 stock: 2,
-                certificate: "CITES Annex II",
-                age: "1 an",
-                origin: "Afrique du Sud"
+                certificate: "CITES Annex II"
             },
-             {
+            {
                 id: 14,
                 name: "Girafe Masaï",
                 scientific: "Girafe Masaï",
                 price: 5000,
                 image: "https://images.unsplash.com/photo-1679546251767-53f7cbb461ba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8R2lyYWZlJTIwTWFzYSVDMyVBRnxlbnwwfHwwfHx8MA%3D%3D",
-                description: "Sous-espèce endémique de Tanzanie. Menacée par le braconnage pour sa peau, sa viande et ses os",
-                category: "primates",
+                description: "Sous-espèce endémique de Tanzanie. Menacée par le braconnage pour sa peau, sa viande et ses os.",
+                category: "other",
                 stock: 3,
-                certificate: "CITES Annex II",
-                age: "1 an",
-                origin: "Tanzania"
+                certificate: "CITES Annex II"
             },
-             {
+            {
                 id: 15,
                 name: "Panthère noire",
                 scientific: "Variante mélanique du léopard",
                 price: 17000,
                 image: "https://plus.unsplash.com/premium_photo-1719842310360-c766d2bcfbf2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UGFudGglQzMlQThyZSUyMG5vaXJlfGVufDB8fDB8fHww",
-                description: "Variante mélanique du léopard (ou de la panthère), extrêmement rare et difficile à filmer",
+                description: "Variante mélanique du léopard (ou de la panthère), extrêmement rare et difficile à filmer.",
                 category: "felines",
                 stock: 2,
-                certificate: "CITES Annex II",
-                age: "1 an",
-                origin: "Kenya"
+                certificate: "CITES Annex II"
             },
             {
                 id: 16,
-                name: "margouillat d'afrique",
+                name: "Margouillat d'afrique",
                 scientific: "l'Agame des colons",
                 price: 900,
                 image: "https://images.unsplash.com/photo-1728830173309-2d44b4a01cbc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QWdhbWElMjBhZ2FtYXxlbnwwfHwwfHx8MA%3D%3D",
                 description: "C'est un lézard courant et facile à observer, plutôt que rare.",
-                category: "primates",
+                category: "reptiles",
                 stock: 9,
-                certificate: "CITES Annex II",
-                age: "1 an",
-                origin: "Afrique de l'Ouest"
-            },
+                certificate: "CITES Annex II"
+            }
         ];
 
-        // Articles détaillés
+        // ==================== ARTICLES ====================
         const articles = [
             {
                 id: 1,
@@ -1333,85 +1539,122 @@
             }
         ];
 
+        // ==================== VARIABLES GLOBALES ====================
         let cart = [];
         let orders = JSON.parse(localStorage.getItem('efa_orders')) || [];
         let currentFilter = 'all';
+        let videoElement = null;
 
-        // Initialisation
+        // ==================== INITIALISATION ====================
         document.addEventListener('DOMContentLoaded', function() {
             displayAnimals();
             displayArticles();
             displayOrders();
-            updateCart();
             setupMobileMenu();
+            updateCart();
+            initializeVideo();
             
             // Afficher l'adresse ETH
             document.getElementById('ethAddress').textContent = ETH_ADDRESS;
+            
+            // Générer les données structurées pour SEO
+            generateStructuredData();
         });
 
-        // Menu mobile
-        function setupMobileMenu() {
-            const mobileBtn = document.getElementById('mobileMenuBtn');
-            const navMenu = document.getElementById('navMenu');
+        // ==================== FONCTIONS VIDÉO ====================
+        function initializeVideo() {
+            videoElement = document.getElementById('mainVideo');
+            if (!videoElement) return;
             
-            if (!mobileBtn || !navMenu) return;
+            // Configurer la vidéo
+            videoElement.controls = true;
+            videoElement.preload = 'metadata';
             
-            mobileBtn.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-                mobileBtn.innerHTML = navMenu.classList.contains('active') ? 
-                    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            // Événements pour la vidéo
+            videoElement.addEventListener('ended', function() {
+                showNotification('Vidéo terminée', 'info');
             });
             
-            // Fermer le menu en cliquant sur un lien
-            document.querySelectorAll('nav a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                    mobileBtn.innerHTML = '<i class="fas fa-bars"></i>';
-                    
-                    // Mettre à jour la classe active
-                    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-                    link.classList.add('active');
-                });
+            videoElement.addEventListener('play', function() {
+                console.log('Vidéo en lecture');
             });
         }
 
-        // Video Modal Functions
         function openVideoModal() {
             const videoModal = document.getElementById('videoModal');
-            if (videoModal) {
-                videoModal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Empêcher le défilement
-            }
+            if (!videoModal) return;
+            
+            videoModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Démarrer la vidéo automatiquement (optionnel)
+            setTimeout(() => {
+                if (videoElement) {
+                    videoElement.play().catch(e => {
+                        console.log('Lecture automatique bloquée:', e);
+                        showNotification('Cliquez sur le bouton Lecture pour démarrer la vidéo', 'info');
+                    });
+                }
+            }, 500);
         }
 
         function closeVideoModal() {
             const videoModal = document.getElementById('videoModal');
-            if (videoModal) {
-                videoModal.classList.remove('active');
-                document.body.style.overflow = 'auto'; // Réactiver le défilement
+            if (!videoModal) return;
+            
+            videoModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Mettre en pause la vidéo
+            if (videoElement) {
+                videoElement.pause();
             }
         }
 
-        // Fermer la modal vidéo en cliquant en dehors
-        document.getElementById('videoModal')?.addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeVideoModal();
+        function playVideo() {
+            if (videoElement) {
+                videoElement.play().catch(e => {
+                    showNotification('Erreur de lecture vidéo: ' + e.message, 'error');
+                });
             }
-        });
+        }
 
-        // Fermer la modal vidéo avec la touche Echap
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeVideoModal();
-                closeArticleModal();
-                const cartModal = document.getElementById('cartModal');
-                if (cartModal && cartModal.classList.contains('active')) {
-                    toggleCart();
+        function pauseVideo() {
+            if (videoElement) {
+                videoElement.pause();
+            }
+        }
+
+        function toggleMute() {
+            if (videoElement) {
+                videoElement.muted = !videoElement.muted;
+                showNotification(videoElement.muted ? 'Son désactivé' : 'Son activé', 'info');
+            }
+        }
+
+        function toggleFullscreen() {
+            if (!videoElement) return;
+            
+            if (!document.fullscreenElement) {
+                if (videoElement.requestFullscreen) {
+                    videoElement.requestFullscreen();
+                } else if (videoElement.webkitRequestFullscreen) {
+                    videoElement.webkitRequestFullscreen();
+                } else if (videoElement.msRequestFullscreen) {
+                    videoElement.msRequestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
                 }
             }
-        });
+        }
 
-        // Affichage des animaux
+        // ==================== FONCTIONS AFFICHAGE ====================
         function displayAnimals() {
             const grid = document.getElementById('animalsGrid');
             if (!grid) return;
@@ -1426,16 +1669,19 @@
             }
             
             grid.innerHTML = filteredAnimals.map(animal => `
-                <div class="animal-card" data-category="${animal.category}">
+                <div class="animal-card" data-category="${animal.category}" itemscope itemtype="https://schema.org/Product">
                     <div class="animal-badge">${animal.certificate}</div>
-                    <img src="${animal.image}" alt="${animal.name}" class="animal-img" loading="lazy">
+                    <img src="${animal.image}" alt="${animal.name}" class="animal-img" loading="lazy" itemprop="image">
                     <div class="animal-info">
-                        <h3 class="animal-name">${animal.name}</h3>
-                        <p class="animal-scientific">${animal.scientific}</p>
+                        <h3 class="animal-name" itemprop="name">${animal.name}</h3>
+                        <p class="animal-scientific" itemprop="description">${animal.scientific}</p>
                         <p style="margin: 1rem 0; color: #666; font-size: 0.9rem;">${animal.description}</p>
                         
                         <div style="display: flex; justify-content: space-between; align-items: center; margin: 1rem 0;">
-                            <div class="animal-price">${animal.price.toLocaleString('fr-FR')} €</div>
+                            <div class="animal-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price">${animal.price.toLocaleString('fr-FR')}</span>
+                                <span itemprop="priceCurrency">€</span>
+                            </div>
                             <div style="color: #27ae60; font-weight: 600; font-size: 0.9rem;">
                                 <i class="fas fa-box"></i> ${animal.stock} disponible${animal.stock > 1 ? 's' : ''}
                             </div>
@@ -1449,7 +1695,25 @@
             `).join('');
         }
 
-        // Filtrage
+        function displayArticles() {
+            const grid = document.getElementById('articlesGrid');
+            if (!grid) return;
+            
+            grid.innerHTML = articles.map(article => `
+                <div class="article-card" itemscope itemtype="https://schema.org/Article">
+                    <img src="${article.image}" alt="${article.title}" class="article-img" loading="lazy" itemprop="image">
+                    <div class="article-content">
+                        <h3 style="margin-bottom: 1rem; color: var(--dark);" itemprop="headline">${article.title}</h3>
+                        <p style="margin-bottom: 1rem; color: #666;" itemprop="description">${article.excerpt}</p>
+                        <button class="btn btn-secondary" onclick="openArticleModal(${article.id})" style="width: 100%;">
+                            <i class="fas fa-book-open"></i> Lire l'article complet
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ==================== FONCTIONS FILTRAGE ====================
         function filterAnimals(category) {
             currentFilter = category;
             
@@ -1462,50 +1726,7 @@
             displayAnimals();
         }
 
-        // Affichage des articles
-        function displayArticles() {
-            const grid = document.getElementById('articlesGrid');
-            if (!grid) return;
-            
-            grid.innerHTML = articles.map(article => `
-                <div class="article-card">
-                    <img src="${article.image}" alt="${article.title}" class="article-img" loading="lazy">
-                    <div class="article-content">
-                        <h3 style="margin-bottom: 1rem; color: var(--dark);">${article.title}</h3>
-                        <p style="margin-bottom: 1rem; color: #666;">${article.excerpt}</p>
-                        <button class="btn btn-secondary" onclick="openArticleModal(${article.id})" style="width: 100%;">
-                            <i class="fas fa-book-open"></i> Lire l'article complet
-                        </button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Ouvrir modal article
-        function openArticleModal(articleId) {
-            const article = articles.find(a => a.id === articleId);
-            if (!article) return;
-            
-            const modalContent = document.getElementById('articleModalContent');
-            modalContent.innerHTML = `
-                <h2 style="margin-bottom: 1rem; color: var(--dark);">${article.title}</h2>
-                <img src="${article.image}" alt="${article.title}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
-                <div style="line-height: 1.6;">
-                    ${article.content}
-                </div>
-            `;
-            
-            document.getElementById('articleModal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        // Fermer modal article
-        function closeArticleModal() {
-            document.getElementById('articleModal').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Panier
+        // ==================== FONCTIONS PANIER ====================
         function addToCart(animalId) {
             const animal = animals.find(a => a.id === animalId);
             
@@ -1608,7 +1829,7 @@
             }
         }
 
-        // Passage à la caisse
+        // ==================== PASSAGE À LA CAISSE ====================
         function goToCheckout() {
             if (cart.length === 0) {
                 showNotification('Votre panier est vide', 'warning');
@@ -1651,7 +1872,7 @@
             `;
         }
 
-        // Copier l'adresse ETH
+        // ==================== COPIER L'ADRESSE ETH ====================
         function copyETHAddress() {
             navigator.clipboard.writeText(ETH_ADDRESS)
                 .then(() => {
@@ -1662,7 +1883,7 @@
                 });
         }
 
-        // TRAITEMENT DU PAIEMENT AVEC ENVOI EMAIL SIMPLE
+        // ==================== TRAITEMENT DU PAIEMENT ====================
         function processPayment() {
             const name = document.getElementById('customerName').value;
             const email = document.getElementById('customerEmail').value;
@@ -1727,7 +1948,7 @@ Cette adresse est aussi visible sur votre page de commande.
 
 Cordialement,
 L'équipe Exotic Fauna Africa
-contact@exoticfauna-africa.com`
+exoticfaunaafrica@outlook.com`
             );
             
             // Créer le lien mailto
@@ -1789,7 +2010,7 @@ Adresse ETH pour le paiement :
 ⚠️ Cette facture constitue une preuve d'achat.
 Conservez-la avec la confirmation de votre transfert ETH.
 
-Exotic Fauna Africa - contact@exoticfauna-africa.com
+Exotic Fauna Africa - exoticfaunaafrica@outlook.com
 `;
         }
 
@@ -1799,7 +2020,7 @@ Exotic Fauna Africa - contact@exoticfauna-africa.com
             return re.test(email);
         }
 
-        // Affichage des commandes
+        // ==================== AFFICHAGE DES COMMANDES ====================
         function displayOrders() {
             const ordersList = document.getElementById('ordersList');
             const noOrdersMessage = document.getElementById('noOrdersMessage');
@@ -1853,7 +2074,7 @@ Exotic Fauna Africa - contact@exoticfauna-africa.com
             `).join('');
         }
 
-        // Générer la facture HTML
+        // ==================== GÉNÉRER LA FACTURE HTML ====================
         function generateInvoice(order) {
             const invoiceContent = `
                 <!DOCTYPE html>
@@ -1960,7 +2181,7 @@ Exotic Fauna Africa - contact@exoticfauna-africa.com
                     </div>
                     
                     <div style="margin-top: 40px; font-size: 0.9em; color: #666;">
-                        <p>Exotic Fauna Africa - contact@exoticfauna-africa.com</p>
+                        <p>Exotic Fauna Africa - exoticfaunaafrica@outlook.com</p>
                         <p>Merci pour votre confiance.</p>
                     </div>
                 </body>
@@ -1979,7 +2200,7 @@ Exotic Fauna Africa - contact@exoticfauna-africa.com
             URL.revokeObjectURL(url);
         }
 
-        // Télécharger facture existante
+        // ==================== TÉLÉCHARGER FACTURE EXISTANTE ====================
         function downloadInvoice(orderId) {
             const order = orders.find(o => o.id === orderId);
             if (order) {
@@ -1988,7 +2209,56 @@ Exotic Fauna Africa - contact@exoticfauna-africa.com
             }
         }
 
-        // Notifications
+        // ==================== OUVRIR MODAL ARTICLE ====================
+        function openArticleModal(articleId) {
+            const article = articles.find(a => a.id === articleId);
+            if (!article) return;
+            
+            const modalContent = document.getElementById('articleModalContent');
+            modalContent.innerHTML = `
+                <h2 style="margin-bottom: 1rem; color: var(--dark);">${article.title}</h2>
+                <img src="${article.image}" alt="${article.title}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <div style="line-height: 1.6;">
+                    ${article.content}
+                </div>
+            `;
+            
+            document.getElementById('articleModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // ==================== FERMER MODAL ARTICLE ====================
+        function closeArticleModal() {
+            document.getElementById('articleModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // ==================== FONCTIONS UTILITAIRES ====================
+        function setupMobileMenu() {
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.getElementById('navMenu');
+            
+            if (!mobileBtn || !navMenu) return;
+            
+            mobileBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                mobileBtn.innerHTML = navMenu.classList.contains('active') ? 
+                    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+            
+            // Fermer le menu en cliquant sur un lien
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    mobileBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    
+                    // Mettre à jour la classe active
+                    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                    link.classList.add('active');
+                });
+            });
+        }
+
         function showNotification(message, type = 'info') {
             // Supprimer les notifications existantes
             document.querySelectorAll('.notification').forEach(n => n.remove());
@@ -2027,7 +2297,38 @@ Exotic Fauna Africa - contact@exoticfauna-africa.com
             }, 3000);
         }
 
-        // Navigation
+        // ==================== FONCTIONS SEO ====================
+        function generateStructuredData() {
+            // Données structurées pour les produits
+            animals.forEach(animal => {
+                const script = document.createElement('script');
+                script.type = 'application/ld+json';
+                script.textContent = JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Product",
+                    "name": animal.name,
+                    "description": animal.description,
+                    "image": animal.image,
+                    "sku": `EFA-${animal.id.toString().padStart(3, '0')}`,
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Exotic Fauna Africa"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "url": window.location.href + `#product-${animal.id}`,
+                        "priceCurrency": "EUR",
+                        "price": animal.price,
+                        "availability": animal.stock > 0 ? 
+                            "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+                        "itemCondition": "https://schema.org/NewCondition"
+                    }
+                });
+                document.head.appendChild(script);
+            });
+        }
+
+        // ==================== GESTION DES ÉVÉNEMENTS ====================
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
@@ -2056,6 +2357,25 @@ Exotic Fauna Africa - contact@exoticfauna-africa.com
                     });
                 }
             });
+        });
+
+        // Fermer la modal vidéo avec la touche Échap
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeVideoModal();
+                closeArticleModal();
+                const cartModal = document.getElementById('cartModal');
+                if (cartModal && cartModal.classList.contains('active')) {
+                    toggleCart();
+                }
+            }
+        });
+
+        // Fermer la modal vidéo en cliquant à l'extérieur
+        document.getElementById('videoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVideoModal();
+            }
         });
 
         // Ajouter animation CSS pour les notifications
